@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+      body {
+        margin:0;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        --verydarkblue:#111729;
+        --darkblue:#1D1B48;
+        --blue:#3662E3;
+        --verydarkgrey:#20293A;
+        --darkgrey:#364153;
+        --grey:#4A5567;
+        --lightgrey:#CDD5E0;
+      }
+      
+      header {
+        background-color:black;
+        background-image:url('./images/hero-image-github-profile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -50px top;
+        height:300px;
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+      }
+      .search {
+        margin-top:50px;
+        background-color:var(--verydarkgrey);
+        width:500px;
+        border-radius:10px;
+        padding:20px 20px;
+        display: flex;
+        align-items: center;
+        gap:10px;
+      }
+      .search img {
+        width:25px;
+        opacity: .4;
+      }
+      .search input {
+        background:transparent;
+        border:none;
+        color:var(--lightgrey);
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .search input::placeholder {
+        color:var(--grey);
+      }
+      .search input:focus {
+        border:none;
+        outline:0;
+      }
+
+      main {
+        background: var(--verydarkgrey);
+        padding-bottom:50px;
+      }
+      main .wrapper {
+        width:75%;
+        margin:0 auto;
+      }
+      .account-details {
+        display:flex;
+        align-items: flex-end;
+        gap:20px;
+        position: relative;
+        top:-40px;
+      }
+      .logo {
+        background:var(--verydarkgrey);
+        border-radius:20px;
+        margin-right:50px;
+      }
+      .logo--wrapper {
+        background:black;
+        border-radius: 20px;
+        margin:8px;
+      }
+      .logo img {
+        width:100px;
+        filter:invert(100%);
+      }
+      .stat {
+        background:var(--verydarkblue);
+        border-radius:10px;
+        display: flex;
+        position: relative;
+        top:-15px;
+      }
+      .stat .label {
+        border-right:1px solid var(--grey);
+        color:var(--grey);
+        font-size: 16px;
+        margin:8px 0;
+        padding:8px 15px;
+      }
+      .stat .value {
+        color:var(--lightgrey);
+        font-size: 16px;
+        margin:8px 0;
+        padding:8px 20px;
+      }
+      
+      .title {
+        font-size: 32px;
+        color:var(--lightgrey);
+      }
+      .subtitle {
+        font-size: 16px;
+        color:var(--lightgrey);
+        opacity: .7;
+        margin-top:5px;
+      }
+
+      .repos {
+        margin-top:40px;
+      }
+      .row {
+        display:flex;
+        align-items: flex-start;
+        gap:30px;
+      }
+      .row:nth-child(2) {
+        margin-top:20px;
+      }
+      .repo {
+        background-image: linear-gradient(to right, var(--verydarkblue), var(--darkblue));
+        border-radius: 10px;
+        padding:20px;
+        width:40%;
+      }
+      .repo-details {
+        display: flex;
+        align-items: center;
+        gap:20px;
+      }
+      .repo-detail {
+        display: flex;
+        align-items: center;
+        gap:5px;
+      }
+      .name {
+        color:var(--lightgrey);
+        font-size: 20px;
+      }
+      .description {
+        color:var(--lightgrey);
+        opacity: .7;
+        font-size: 16px;
+        margin:10px 0 20px;
+      }
+      .repo-detail .value {
+        color:var(--lightgrey);
+        opacity: .7;
+        font-size: 16px;
+      }
+      .lastUpdated {
+        color:var(--lightgrey);
+        opacity: .7;
+        font-size: 12px;
+      }
+      footer {
+        text-align: center;
+        position: relative;
+        left:-50px;
+        margin-top:20px;
+      }
+      footer a {
+        color:var(--lightgrey);
+        font-size: 16px;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <script>
+      window.onload = function() {
+
+        
+
+      }
+
+      
+    </script>
+</head>
+<body>
+
+  <header>
+    <div class="search">
+      <img src="./images/Search.svg">
+      <input type="text" placeholder="username">
+    </div>
+    <!-- <div class="matches">
+      test
+    </div> -->
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <div class="account-details">
+        <div class="logo">
+          <div class="logo--wrapper">
+            <img src="./images/github-logo.png">
+          </div>
+        </div>
+        <div class="stat">
+          <div class="label">Followers</div>
+          <div class="value">27839</div>
+        </div>
+        <div class="stat">
+          <div class="label">Following</div>
+          <div class="value">0</div>
+        </div>
+        <div class="stat">
+          <div class="label">Location</div>
+          <div class="value">San Francisco, CA</div>
+        </div>
+      </div>
+      <div class="title">GitHub</div>
+      <div class="subtitle">How people build software.</div>
+      <div class="repos">
+        <div class="row">
+          <div class="repo">
+            <div class="name">.github</div>
+            <div class="description">Community health files for the @GitHub organization</div>
+            <div class="repo-details">
+              <div class="repo-detail">
+                <img src="./images/Nesting.svg">
+                <div class="value">2,369</div>
+              </div>
+              <div class="repo-detail">
+                <img src="./images/Star.svg">
+                <div class="value">703</div>
+              </div>
+              <div class="lastUpdated">updated 4 days ago</div>
+            </div>
+          </div>
+          <div class="repo">
+            <div class="name">accessibility-alt-text-bot</div>
+            <div class="description">An action to remind users to add alt text on Issues, Pull<br>Requests, and Discussions</div>
+            <div class="repo-details">
+              <div class="repo-detail">
+                <img src="./images/Shield_alt.svg">
+                <div class="value">MIT</div>
+              </div>
+              <div class="repo-detail">
+                <img src="./images/Nesting.svg">
+                <div class="value">7</div>
+              </div>
+              <div class="repo-detail">
+                <img src="./images/Star.svg">
+                <div class="value">50</div>
+              </div>
+              <div class="lastUpdated">updated 3 days ago</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="repo">
+            <div class="name">accessibilityjs</div>
+            <div class="description">Client side accessibility error scanner.</div>
+            <div class="repo-details">
+              <div class="repo-detail">
+                <img src="./images/Shield_alt.svg">
+                <div class="value">MIT</div>
+              </div>
+              <div class="repo-detail">
+                <img src="./images/Nesting.svg">
+                <div class="value">72</div>
+              </div>
+              <div class="repo-detail">
+                <img src="./images/Star.svg">
+                <div class="value">2181</div>
+              </div>
+              <div class="lastUpdated">updated 4 days ago</div>
+            </div>
+          </div>
+          <div class="repo">
+            <div class="name">actions-cheat-sheet</div>
+            <div class="description">A cheat sheet for GitHub Actions</div>
+            <div class="repo-details">
+              <div class="repo-detail">
+                <img src="./images/Shield_alt.svg">
+                <div class="value">MIT</div>
+              </div>
+              <div class="repo-detail">
+                <img src="./images/Nesting.svg">
+                <div class="value">26</div>
+              </div>
+              <div class="repo-detail">
+                <img src="./images/Star.svg">
+                <div class="value">194</div>
+              </div>
+              <div class="lastUpdated">updated 4 days ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <a href="" target="_blank">View all repositories</a>
+      </footer>
+    </div>
+  </main>
+
+</body>
+</html>
